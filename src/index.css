@@ -30,6 +30,42 @@ body {
   scrollbar-color: #EE8545 #EE85454D;
 }
 
+h1 {
+  color:#EE8545;
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 80px;
+  letter-spacing: 0;
+  line-height: 100%;
+}
+
+h2 {
+  color: white;
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 48px;
+  letter-spacing: 0;
+  line-height: 100%;
+}
+
+h3 {
+  color: white;
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 32px;
+  letter-spacing: 0;
+  line-height: 100%;
+}
+
+h4 {
+  color: white;
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 32px;
+  letter-spacing: 0;
+  line-height: 100%;
+}
+
 @layer base {
   @font-face {
     font-family: Montserrat;
