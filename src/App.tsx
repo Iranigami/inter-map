@@ -1,21 +1,22 @@
-import map from "./assets/map.png"
-import logo from "./assets/logo.png"
-import Menu from "./comps/Menu"
-import Footer from "./comps/Footer"
-import Cities from "./comps/Cities"
+import {
+  Navigate,
+  Route,
+  BrowserRouter as Router,
+  Routes,
+} from "react-router-dom";
+import Main from "./Pages/Main";
+import OurCity from "./Pages/OurCity";
 
 function App() {
-
   return (
-    <>
-    <img src={map} alt="map" className="absolute w-[3840px] h-[2354.07]px fixed top-[67px] z-[-1]" />
-
-    <Cities/>
-    <img src={logo} alt="logo" className="fixed top-[40px] left-[80px] w-[580px]" />
-    <Menu/>
-    <Footer/>
-    </>
-  )
+    <Router>
+      <Routes>
+        <Route path="*" element={<Navigate to="/home" />} />
+        <Route path="/home" element={<Main />} />
+        <Route path="/our-city" element={<OurCity />} />
+      </Routes>
+    </Router>
+  );
 }
 
-export default App
+export default App;
