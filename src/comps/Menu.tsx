@@ -1,4 +1,3 @@
-import { useState } from "react";
 import homeOn from "../assets/icons/homeOn.svg";
 import homeOff from "../assets/icons/homeOff.svg";
 import cityOn from "../assets/icons/cityOn.svg";
