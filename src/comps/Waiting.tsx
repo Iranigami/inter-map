@@ -26,7 +26,7 @@ export default function Waiting() {
     const expiryTimestamp = time;
     const { seconds } = useTimer({
       expiryTimestamp,
-      onExpire: () => navigate("/home"),
+      onExpire: () => navigate("/"),
     });
 
     return (
@@ -69,7 +69,7 @@ export default function Waiting() {
                 Продолжить
                 </button>
                 <button
-                onClick={() => navigate("/home")}
+                onClick={() => navigate("/")}
                 className="w-[549px] h-[113px] rounded-[64px] flex justify-center items-center bg-white border-[4px] border-[#EE8545] text-[#EE8545] font-montserrat font-bold text-[40px] leading-[100%] tracking-0 text-center"
                 >
                 На главную
