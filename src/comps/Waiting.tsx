@@ -7,6 +7,7 @@ export default function Waiting() {
   let time: number;
   const resetTimer = () => {
     clearTimeout(time);
+    //@ts-ignore
     time = setTimeout(() => {
       setUserInactive(true);
     }, 60000); //1min of inactivity
@@ -15,6 +16,7 @@ export default function Waiting() {
   const navigate = useNavigate();
   useEffect(() => {
     clearTimeout(time);
+    //@ts-ignore
     time = setTimeout(() => {
       setUserInactive(true);
     }, 60000); //1min of inactivity
