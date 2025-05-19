@@ -12,7 +12,7 @@ export default function Menu() {
       <button
         disabled = {location.pathname !== '/our-city'}
         onClick={() => {
-          navigate("/");
+          navigate("/map");
         }}
         className="w-[440px] h-[128px] rounded-[64px] disabled:bg-[#EE8545] bg-[#FFFFFF33] flex justify-center items-center gap-[16px]"
       >

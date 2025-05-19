@@ -3,8 +3,9 @@ import logo from "../assets/logo.png";
 import Menu from "../comps/Menu";
 import Footer from "../comps/Footer";
 import Cities from "../comps/Cities";
+import Waiting from "../comps/Waiting";
 
-export default function Main() {
+export default function Map() {
   return (
     <>
       <img
@@ -21,6 +22,7 @@ export default function Main() {
       />
       <Menu />
       <Footer />
+      <Waiting/>
     </>
   );
 }

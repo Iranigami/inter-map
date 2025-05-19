@@ -35,8 +35,9 @@ h1 {
   font-family: Montserrat;
   font-weight: 700;
   font-size: 80px;
-  letter-spacing: 0;
-  line-height: 100%;
+  line-height: 120%;
+  letter-spacing: 0%;
+
 }
 
 h2 {
@@ -44,8 +45,9 @@ h2 {
   font-family: Montserrat;
   font-weight: 700;
   font-size: 48px;
-  letter-spacing: 0;
-  line-height: 100%;
+  line-height: 120%;
+  letter-spacing: 0%;
+  
 }
 
 h3 {
@@ -53,8 +55,9 @@ h3 {
   font-family: Montserrat;
   font-weight: 600;
   font-size: 32px;
-  letter-spacing: 0;
   line-height: 100%;
+  letter-spacing: 0%;
+  
 }
 
 h4 {
@@ -62,29 +65,43 @@ h4 {
   font-family: Montserrat;
   font-weight: 400;
   font-size: 32px;
-  letter-spacing: 0;
   line-height: 100%;
+  letter-spacing: 0%;
+  
+}
+
+.white-shadow {
+  filter: drop-shadow(0px 0px 120px #FFFFFF40);
+}
+
+.black-to-transparent {
+  mix-blend-mode: screen;
 }
 
 @layer base {
   @font-face {
     font-family: Montserrat;
-    font-weight: 400;
+    font-weight: 200;
+    src: url(./assets/fonts/Montserrat-Light.ttf);
+  }
+  @font-face {
+    font-family: Montserrat;
+    font-weight: 300;
     src: url(./assets/fonts/Montserrat-Regular.ttf);
   }
   @font-face {
     font-family: Montserrat;
-    font-weight: 500;
+    font-weight: 400;
     src: url(./assets/fonts/Montserrat-Medium.ttf);
   }
   @font-face {
     font-family: Montserrat;
-    font-weight: 700;
+    font-weight: 600;
     src: url(./assets/fonts/Montserrat-Bold.ttf);
   }
   @font-face {
     font-family: Montserrat;
-    font-weight: 600;
+    font-weight: 500;
     src: url(./assets/fonts/Montserrat-SemiBold.ttf);
   }
   @font-face {
