@@ -1,5 +1,5 @@
-import purple from "../assets/purple.png"
-import molod from "../assets/molod.png"
+import purple from "../assets/purple.svg"
+import molod from "../assets/molod.svg"
 import map from "../assets/map empty.svg"
 import click from "../assets/icons/click.svg"
 import stars from "../assets/star.svg"

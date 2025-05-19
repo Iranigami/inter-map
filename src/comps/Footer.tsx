@@ -1,7 +1,7 @@
-import oblast from "../assets/obl.png";
-import molod from "../assets/molod.png";
-import victory from "../assets/victory.png";
-import purple from "../assets/purple.png";
+import oblast from "../assets/obl.svg";
+import molod from "../assets/molod.svg";
+import victory from "../assets/victory.svg";
+import purple from "../assets/purple.svg";
 
 export default function Footer() {
   return (

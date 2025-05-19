@@ -1,5 +1,5 @@
 import map from "../assets/map edit 1.png";
-import logo from "../assets/logo.png";
+import logo from "../assets/logo.svg";
 import Menu from "../comps/Menu";
 import Footer from "../comps/Footer";
 import Cities from "../comps/Cities";
