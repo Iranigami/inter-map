@@ -20,7 +20,7 @@ export default function HeroCity() {
       </div>
       <button
         onClick={() => navigate("/")}
-        className="z-100 w-[440px] h-[128px] rounded-[64px] bg-white flex gap-[16px] shadow-[0px_2px_20px_0px_#00000026] fixed bottom-[40px] left-[40px] justify-center items-center font-montserrat font-bold text-[40px] text-[#EE8545] leading-[100%] tracking-0"
+        className="w-[440px] h-[128px] rounded-[64px] bg-white flex gap-[16px] shadow-[0px_2px_20px_0px_#00000026] fixed bottom-[40px] left-[40px] justify-center items-center font-montserrat font-bold text-[40px] text-[#EE8545] leading-[100%] tracking-0"
       >
         <img src={home} alt="home" className="size-[64px]" />
         На главную
