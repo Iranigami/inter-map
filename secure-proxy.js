@@ -33,6 +33,7 @@ app.get("/proxy", async (req, res) => {
     });
     $(".subpages-slider-wrapper").css("pointer-events", "none");
     $(".ya-share2").css("pointer-events", "none");
+    $(".post-video").css("display", "none");
 
     // Добавляем CSS для гарантии
     $("head").append(`
