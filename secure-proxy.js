@@ -30,10 +30,12 @@ app.get("/proxy", async (req, res) => {
       $(el).removeAttr("href");
       $(el).css("pointer-events", "none");
       $(el).css("cursor", "default");
+      
     });
     $(".subpages-slider-wrapper").css("pointer-events", "none");
     $(".ya-share2").css("pointer-events", "none");
     $(".post-video").css("display", "none");
+    $("*").css("user-select", "none");
 
     // Добавляем CSS для гарантии
     $("head").append(`
