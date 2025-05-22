@@ -10,9 +10,43 @@ type Media = {
 }
 
 
-export default function OurCity() {
+const MediaElement = (selectedImage: Media) => {
+  let mediaType = selectedImage.media.split('.').pop()!.toLowerCase();
+
+switch(mediaType){
+   case 'mp4':
+   case 'webm':
+   case 'mov':
+   case 'mkv':
+      return (
+         <video src={"https://cheremhovo.test.itlabs.top" + selectedImage.media}
+            autoPlay={true}
+            controls={true}
+            width={'2147'}
+         />
+      );
+   
+   case 'jpg':
+   case 'jpeg':
+   case 'png':
+   case 'gif':
+      return (
+         <img src={"https://cheremhovo.test.itlabs.top" + selectedImage.media}
+            alt="image"
+            className={'w-full'}
+         />
+      );
+      
+   default:
+      return (<p>Формат файла "{mediaType}" не поддерживается.</p>);
+};
+}
+
+
+export default function OurCity() {  
     const [files, setFiles] = useState([]);
     const [selectedImage, setSelectedImage] = useState<Media>();
+
     useEffect(()=>{
         axios.get(`https://cheremhovo.test.itlabs.top/api/cheremhovo`).then((response) => {
             if(document.getElementById("info"))
@@ -25,12 +59,8 @@ export default function OurCity() {
     <>
       <div className="bg-[#FFFFFF26] w-[3760px] h-[1720px] rounded-[60px] fixed top-[40px] mx-auto left-0 right-0 flex p-[40px] gap-[40px] justify-center items-center">
         <div className="w-[2147px] h-[1640px]">
-            <div className="w-[2147px] h-[1207.69px] rounded-[30px] bg-red-200 overflow-hidden">
-                {selectedImage && 
-                <>
-                {selectedImage.media.includes("mkv") && <video src={"https://cheremhovo.test.itlabs.top" + selectedImage.media} autoPlay={true} controls={true} width={2147} />}
-                {selectedImage.media.includes("jpg") && <img src={"https://cheremhovo.test.itlabs.top" + selectedImage.media} alt="image" className={`w-full`} />}
-                </>}
+            <div className="w-[2147px] h-[1207.69px] rounded-[30px] overflow-hidden">
+                {selectedImage && MediaElement(selectedImage)}
             </div>
             <div className="mt-[40px] flex gap-[16px] w-[2147px] h-[392.31px] overflow-x-auto overflow-y-hidden justify-left items-center">
                 {files.map((image: Media, index: number) => (
