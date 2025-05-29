@@ -4,6 +4,7 @@ import map from "../assets/map empty.svg"
 import click from "../assets/icons/click.svg"
 import stars from "../assets/star.svg"
 import dots from "../assets/dots.svg"
+import logo from "../assets/molodezh_deti_inversiya 1.svg"
 import { useNavigate } from "react-router-dom";
 
 export default function Home(){
@@ -15,13 +16,10 @@ export default function Home(){
             <img src={dots} alt="dots" className="fixed w-[1737.28px] h-[992.45px] top-[616.17px] left-[362.5px]"/>
 
             <div className="w-full h-full fixed top-0 bg-linear-to-b from-[#EE8545] to-[#EE854500] opacity-[30%]"/>
-            <div className="flex top-[40px] justify-center w-full h-[220px] items-center gap-[32px] fixed">
-                <img src={purple} alt="Пространство от Росмолодежь" className="w-[612px] h-[150px]" />
+            <div className="flex top-[40px] justify-center w-full items-start gap-[32px] fixed">
+                  <img src={logo} alt="Национальные проекты России" className="w-[730px] h-[250px] mt-[12px]"/>
+                  <img src={purple} alt="Пространство от Росмолодежь" className="w-[612px] h-[150px] mt-[30px]" />
                 <img src={molod} alt="Молодежка че" className="w-[510px] h-[220px]" />
-            </div>
-            <div className="text-white font-montserrat font-bold text-[120px] leading-[100%] tracking-[0px] text-center fixed top-[264px] left-0 right-0 mx-auto">
-                МБУ «Центр поддержки<br/>
-                молодежных инициатив»
             </div>
             <button
                 onClick={()=> navigate("/map")} 
